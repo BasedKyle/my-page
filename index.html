@@ -2,14 +2,11 @@
 <html>
 <head>
     <script>
-        // Получаем предпочитаемый язык браузера (например, "ru-RU" или "en-US")
         const userLang = navigator.language || navigator.userLanguage; 
         
-        // Проверяем, начинается ли код языка с "ru"
         if (userLang.startsWith('ru')) {
             window.location.href = "./ru/";
         } else {
-            // Всех остальных отправляем на английскую версию
             window.location.href = "./en/";
         }
     </script>
