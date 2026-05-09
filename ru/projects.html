@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<head>
+    <link href="../style/style.css" rel="stylesheet">
+    <link rel="icon" href="../img/kylegay.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>KitsuneKyle's page</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="../img/kylegay.png" class="logo-img">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="links.html">Ссылки</a></li>
+                    <li><a href="projects.html">Проекты</a></li>
+            </nav>
+            <div class="dropdown">
+                <button class="dropbtn">
+                    Языки <span class="arrow">▼</span>
+                </button>
+  
+                <div class="dropdown-content">
+                    <a href="../ru/index.html" onclick="switchLanguage('ru')">Русский</a>
+                    <a href="../en/index.html" onclick="switchLanguage('en')">English</a>
+                </div>
+            </div>
+        </header>
+
+    <div class="content-wrapper">
+        <div class="list-panel">
+            <ul>
+                <li class="project-card" onclick="showDetails('item1')">
+                    <div class="card-header">
+                        <img src="../img/example-icon.png" class="card-icon" alt="Fluffy Bot">
+                        <div class="header-text">
+                            <h3>Fluffy Bot</h3>
+                            <p>Бот для Discord.</p>
+                        </div>
+                    </div>
+                    <div class="project-status in-development">
+                        В разработке
+                    </div>
+                </li>
+                
+                <!-- <li class="project-card" onclick="showDetails('item2')">
+                    <div class="card-header">
+                        <img src="../img/example-icon.png" class="card-icon" alt="Пример">
+                        <div class="header-text">
+                            <h3>Другой проект</h3>
+                            <p>Краткое описание другого проекта.</p>
+                        </div>
+                    </div>
+                    <div class="project-status frozen">
+                        Заморожен
+                    </div>
+                </li>
+
+                <li class="project-card" onclick="showDetails('item3')">
+                    <div class="card-header">
+                        <img src="../img/example-icon.png" class="card-icon" alt="Закрыт">
+                        <div class="header-text">
+                            <h3>Архив</h3>
+                            <p>Краткое описание закрытого проекта.</p>
+                        </div>
+                    </div>
+                    <div class="project-status closed">
+                        Закрыт
+                    </div>
+                </li> -->
+            </ul>
+        </div>
+
+        <div class="detail-panel" id="main-detail-panel">
+            <div id="item1-details" class="details-content">
+                <h2>Fluffy Bot (в прошлом был котом)</h2>
+                <p>Fluffy Bot - Discord-бот, на данный момент способный полноценно работать с e621/926 api, а так же имеет систему верификации новых участников. Разрабатывается в том числе с упором на мультисерверность, и на каждом из серверов может быть настроен по-своему.
+                <p></p>
+                <h3>Что он умеет на данный момент?</h3>
+                <p></p>
+                <p>- Покажет случайный арт с учетом нужных тегов, с информацией по посту</p>
+                <p>- Позволяет настроить чёрные/белые листы как для сервера, так и для отдельных каналов</p>
+                <p>- Позволяет вручную верифицировать новых участников сервера, для лучшего контроля</p>
+                <p></p>
+                <h3>Список команд:</h3>
+                <p>/e621 [теги] Случайный арт с е621 (18+, ограничение вписано в бота и не меняется)</p>
+                <p>/2926 [теги] Случайный не 18+ арт с е621</p>
+                <p>/post_info [id поста] Информация о посте и ссылка на арт</p>
+                <p>/blacklist_add - Добавить тег (и) в blacklist сервера</p>
+                <p>/blacklist_remove [теги] Удалить теги из blacklist сервера</p>
+                <p>/blacklist_show Показать blacklist сервера</p>
+                <p>/blacklist_clear Очистить blacklist сервера</p>
+                <p>/verify [пользователь] Верифицировать пользователя</p>
+                <p>/reset_role_permissions Сбросить права роли верификации</p>
+                <p>/set_verification_role [название] Установить название роли для верификации</p>
+                <p>/get_verification_role Показать текущее название роли</p>
+                <br>
+                <p>Протестировать можно уже прямо сейчас, в моём <a href="https://discord.gg/MxG5erBXPn">дискорде</a></p>
+                </div>
+            
+            <div id="item2-details" class="details-content">
+                <h2>Детали Другого проекта</h2>
+                <p>Здесь будет подробное описание второго проекта.</p>
+            </div>
+
+            <div id="item3-details" class="details-content">
+                <h2>Детали Архива</h2>
+                <p>Здесь будет подробное описание закрытого проекта.</p>
+            </div>
+        </div>
+    </div>
+    <script src="../style/script.js"></script>
+</body>

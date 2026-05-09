@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<head>
+    <link href="../style/style.css" rel="stylesheet">
+    <link rel="icon" href="../img/kylegay.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>KitsuneKyle's page</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="../img/kylegay.png" class="logo-img">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="links.html">Ссылки</a></li>
+                    <li><a href="projects.html">Проекты</a></li>
+            </nav>
+            <div class="dropdown">
+                <button class="dropbtn">
+                    Языки <span class="arrow">▼</span>
+                </button>
+  
+                <div class="dropdown-content">
+                    <a href="../ru/links.html" onclick="switchLanguage('ru')">Русский</a>
+                    <a href="../en/links.html" onclick="switchLanguage('en')">English</a>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <div class="linkpage container">
+            <div class="linklist">
+                <h2>Остальные соц.сети</h2>
+                <p>Вы можете найти меня в этих местах:</p>
+                <div class="buttonlist container">
+                    <button onclick="window.open('https://x.com/OnlyYourKyle', '_blank')" class="btn-twitter">
+                        <i class="fab fa-twitter"></i>
+                        Twitter
+                    </button>
+                    <button onclick="window.open('https://t.me/kitsunekyle', '_blank')" class="btn-tg">
+                        <i class="fab fa-telegram"></i>
+                        Telegram
+                    </button>
+                    <button onclick="window.open('https://www.twitch.tv/kitsunekyle', '_blank')" class="btn-twitch">
+                        <i class="fab fa-twitch"></i>
+                        Twitch
+                    </button>
+                    <button onclick="window.open('https://', '_blank')" class="btn-tt">
+                        <i class="fab fa-tiktok"></i>
+                        TikTok
+                    </button>
+                    <button onclick="window.open('https://www.youtube.com/channel/UCs7jDd9Ox9QV7CGLdrY_WFA', '_blank')" class="btn-yt">
+                        <i class="fab fa-youtube"></i>
+                        YouTube
+                    </button>
+                    <button onclick="window.open('https://discord.gg/MxG5erBXPn', '_blank')" class="btn-discord">
+                        <i class="fab fa-discord"></i>
+                        Discord
+                    </button>
+                </div>
+                <a>А также поддержать меня и мои проекты:</a>
+                <div class="buttonlist container">
+                    <button class="btn-donate">
+                        <i class="fa-solid fa-circle-dollar-to-slot"></i>
+                        Donate
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../style/script.js"></script>
+</body>
