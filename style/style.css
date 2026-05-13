@@ -273,6 +273,24 @@ header nav ul li a:hover {
     color: #ffffff;
 }
 
+.btn-github {
+    padding: 10px 20px;
+    cursor: pointer;
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    color: #868686;
+    font-family: "Onest", sans-serif;
+    font-weight: 900;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-github:hover {
+    background-color: #868686;
+    color: #ffffff;
+}
+
 .dropdown {
     position: relative;
     display: inline-block;
